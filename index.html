@@ -24,6 +24,15 @@
     </xml>
   </noscript>
   <![endif]-->
+
+  <!--[if mso]>
+    <style type="text/css">
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    </style>
+<![endif]-->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
@@ -49,6 +58,7 @@
         width: 100% !important;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     }
 
     /* Image Reset */
@@ -83,6 +93,23 @@
     .p_font {
         font-family:'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
     }
+    .text_color_light {
+        color: #ECE5DF;
+    }
+    .header_link_style {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-style: normal;
+        text-decoration: none;
+    }
+    .padding_top_16px {
+        padding-top: 16px;
+      }
+    .padding_bottom_22px {
+        padding-bottom: 22px;
+      }
     @media screen and (max-width: 600px) {
       .container {
         width: 100% !important;
@@ -100,6 +127,12 @@
       .text-center {
         text-align: center !important;
       }
+      .padding_bottom_10px_resp {
+        padding-bottom: 10px !important;
+      }
+      .padding_bottom_12px_resp {
+        padding-bottom: 12px !important;
+      }
     }
   </style>
 </head>
@@ -113,17 +146,51 @@
         <!-- Container -->
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="container" style="width:600px; max-width:600px; background-color:#ffffff;">
 
-          <!-- HEADER -->
+          <!-- HEADER LOGO AND LINK MENU-->
+           <tr> 
+            <td align="center" bgcolor="#221F20" style="background-color:#221F20; padding-top: 44px; padding-left: 72px; padding-right: 72px;">
+                <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                        <td style="text-align: center;">
+                            <tr>
+                                <a href="https://drift.co/" target="_blank">
+                                    <img src="https://i.ibb.co/7NK1kSX8/drift-logo.png" width="131" alt="Drift logo" style="text-align: center;">
+                                </a>
+                            </tr>
+                            <tr>
+                                <td class="padding_bottom_22px padding_bottom_12px_resp" style="padding-top: 28px;">
+                                    <table role="presentation" align="center" bgcolor="" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                        <td bgcolor="" class="stack padding_bottom_10px_resp text_color_light" style="text-align: center;" >
+                                            <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">SHOP ALL</a>
+                                        </td>
+                                        <td bgcolor="" class="stack padding_bottom_10px_resp text_color_light" style="text-align: center; " >
+                                            <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">CAR</a>
+                                        </td>
+                                        <td bgcolor="" class="stack padding_bottom_10px_resp text_color_light" style="text-align: center;">
+                                            <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">HOME</a>
+                                        </td>
+                                        <td bgcolor="" class="stack padding_bottom_10px_resp text_color_light" style="text-align: center;">
+                                            <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">SCENT OF THE MONTH</a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </td>
+                </table>             
+            </td>
+          </tr>
+          <!-- DIVIDER -->
           <tr>
-            <td align="left" style="padding:20px;">
-              <img src="https://via.placeholder.com/150x50" width="150" alt="Logo">
+            <td style="height: 80px; width: 100%; background-color: rebeccapurple;">
+              
             </td>
           </tr>
 
-          <!-- HERO -->
+          <!-- HERO SECTION-->
           <tr>
             <td>
-              <img src="https://via.placeholder.com/600x300" width="600" alt="Hero Image" style="width:100%; max-width:600px;">
+                <a href="https://drift.co/account/" target="_blank">
+                    <img src="https://i.ibb.co/5ggXMRvr/hero-image-clip.png" width="600" alt="Hero Image" style="width:100%; max-width:600px;">
+                </a>
             </td>
           </tr>
 
