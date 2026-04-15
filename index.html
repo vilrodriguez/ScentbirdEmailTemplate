@@ -6,12 +6,16 @@
     <!--[if !mso]><!-- -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
-  <title>Scentbird Drift Email Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Scentbird Drift Email Template</title>
   <!--[if mso]>
   <noscript>
     <xml>
@@ -34,12 +38,10 @@
     </style>
 <![endif]-->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
-    /* General Reset */
     body {
         margin: 0;
         padding: 0;
@@ -48,7 +50,6 @@
         -ms-text-size-adjust: 100%;
         font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     }
-    /* Image Reset */
     img {
         border: 0;
         height: auto;
@@ -58,7 +59,6 @@
         display: block; 
         -ms-interpolation-mode: bicubic; 
     }
-    /* Table Reset */
     table, td {
         border-collapse: collapse !important;
         margin: 0 auto;
@@ -71,24 +71,21 @@
         padding: 0;
         mso-line-height-rule: exactly;
     }
-    /* Link Reset */
     a {
         text-decoration: none;
         -webkit-text-size-adjust: 100%; 
         -ms-text-size-adjust: 100%;
     }
-     /* iOS blue links fix */
     a[x-apple-data-detectors] {
       color: inherit!important;
       text-decoration: none!important;
       font-size: inherit!important; 
-    font-family: inherit!important; 
-    font-weight: inherit!important; 
-    line-height: inherit!important;
+        font-family: inherit!important; 
+        font-weight: inherit!important; 
+        line-height: inherit!important;
     }
-    /* Chrome Gmail blue text fix */
     .ii a[href] { 
-        color: inherit !important; 
+        color: inherit!important; 
     }
      @font-face { 
         font-family: 'PT Serif'; 
@@ -102,78 +99,76 @@
         font-weight: 400; 
         src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     }
-    
-    /* Reusable classes */    
     .h1_font {
-        font-family: 'PT Serif', Verdana, Geneva, Tahoma, sans-serif;
+        font-family:'PT Serif', Verdana, Tahoma, sans-serif;
     }
     .p_font {
-        font-family:'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+        font-family:'Josefin Sans', Verdana, Tahoma, sans-serif;
     }
     .text_color_light {
-        color: #ECE5DF;
+        color:#ECE5DF;
     }
     .text_color_dark {
-        color: #221F20;
+        color:#221F20;
     }
     .header_link_style {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: center;
-        font-style: normal;
-        text-decoration: none;
+        font-weight:500;
+        font-size:18px;
+        line-height:18px;
+        text-align:center;
+        font-style:normal;
+        text-decoration:none;
     }
     .padding_top_16px {
-        padding-top: 16px;
-      }
+        padding-top:16px;
+    }
     .padding_bottom_22px {
-        padding-bottom: 22px;
-      }
+        padding-bottom:22px;
+    }
       .hero_side_paddings {
-        padding-left: 94px;
-        padding-right: 94px;
-      }
+        padding-left:94px;
+        padding-right:94px;
+    }
       .btn_side_paddings {
-        padding-left: 87px;
-        padding-right: 87px;
-      }
+        padding-left:87px;
+        padding-right:87px;
+    }
       .btn_width {
         width:327px;
-      }
+    }
       .display_inline_block {
-        display: inline-block;
-      }
+        display:inline-block;
+    }
       .text_align_center {
-        text-align: center;
-      }
+        text-align:center;
+    }
     @media screen and (max-width: 600px) {
       .container {
-        width: 100%!important;
-      }
+        width:100%!important;
+        }
       .stack {
-        display: block!important;
-        width: 100%!important;
+        display:block!important;
+        width:100%!important;
       }
       .padding {
-        padding: 20px!important;
+        padding:20px!important;
       }
       .text-center {
-        text-align: center!important;
+        text-align:center!important;
       }
       .padding_bottom_10px_resp {
-        padding-bottom: 10px!important;
+        padding-bottom:10px!important;
       }
       .padding_bottom_12px_resp {
-        padding-bottom: 12px!important;
+        padding-bottom:12px!important;
       }
       .hero_side_paddings_resp {
-        padding-left: 24px!important;
-        padding-right: 24px!important;
+        padding-left:24px!important;
+        padding-right:24px!important;
       }
       .btn_side_paddings_resp {
-        padding-left: 32px!important;
-        padding-right: 32px!important;
+        padding-left:32px!important;
+        padding-right:32px!important;
       }
       .btn_width_resp {
         width:200px!important;
@@ -217,7 +212,7 @@
                                                         SHOP ALL
                                                     </a>
                                                 </td>
-                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 15%; text-align: center;">
+                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 15%; text-align: center; color: #ECE5DF;">
                                                     <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">
                                                         CAR
                                                     </a>
@@ -252,7 +247,7 @@
                     <tr>
                         <td>
                             <a href="https://drift.co/account/" target="_blank">
-                                <img src="https://vilrodriguez.github.io/img/hero_image_clip.png" width="600" height="auto" alt="" style="display:block; width: 100%; height: auto;">
+                                <img src="https://vilrodriguez.github.io/img/hero_image_clip.png" width="600" height="auto" alt="In the picture we can see a man's hand is attaching a Drift scent clip on the visor inside the vehicle" style="display:block; width: 100%; height: auto;">
                             </a>
                         </td>
                     </tr>
@@ -263,7 +258,7 @@
                         
                         <table role="presentation" width="412" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 412px;">
                             <tr>
-                                <td align="center" class="text_align_center" style="padding-top: 39px;">
+                                <td align="center" class="text_align_center text_color_light" style="padding-top: 39px;">
                                     <h1 class="text_color_light h1_font" style="font-size: 50px; font-weight: 400; line-height: 50px; letter-spacing: -1px;" >
                                         Ready in <em>seconds</em>
                                     </h1>
@@ -290,7 +285,7 @@
                                             </v:roundrect>
                                             <![endif]-->
                                             <!--[if !mso]><!-- -->
-                                                <a href="https://drift.co/account/" class="p_font btn_side_paddings_resp btn_width btn_width_resp" style="max-width: 327px; display:block; background-color:#FFFFFF; color:#363530; text-decoration:none; padding-top:15px; padding-bottom:15px; font-size:16px; line-height: 16px; font-weight: 500; border-radius:50px;">
+                                                <a href="https://drift.co/account/" target="_blank" class="p_font btn_side_paddings_resp btn_width btn_width_resp" style="max-width: 327px; display:block; background-color:#FFFFFF; color:#363530; text-decoration:none; padding-top:15px; padding-bottom:15px; font-size:16px; line-height: 16px; font-weight: 500; border-radius:50px;">
                                                     LEARN MORE
                                                 </a>
                                             <!--<![endif]-->
@@ -436,12 +431,12 @@
                             <table role="presentation" align="center" width="441" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%; max-width: 441px;">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://drift.attn.tv/p/TNf/landing-page" target="_blank" style="text-decoration:none;">
+                                        <a href="https://drift.attn.tv/p/TNf/landing-page" target="_blank" aria-label="Get text alerts from Drift" style="text-decoration:none;">
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                                 <tr>
                                                     <!-- ICON -->
                                                     <td valign="middle">
-                                                        <img src="https://vilrodriguez.github.io/img/bubbletext_footer_icon.png" width="18" alt="" style="display:block;">
+                                                        <img src="https://vilrodriguez.github.io/img/bubbletext_footer_icon.png" width="18" alt="" style="display:block;" role="presentation" >
                                                     </td>
                                                     <!-- SPACE -->
                                                     <td width="10"></td>
@@ -453,7 +448,7 @@
                                                     <td width="10"></td>
                                                     <!-- ARROW -->
                                                     <td valign="middle">
-                                                        <img src="https://vilrodriguez.github.io/img/arrow_footer_icon.png" width="40" alt="" style="display:block;">
+                                                        <img src="https://vilrodriguez.github.io/img/arrow_footer_icon.png" width="40" alt="" style="display:block;" role="presentation" >
                                                     </td>
                                                 </tr>
                                             </table>
@@ -503,6 +498,7 @@
         </tr>
     </table>
     <!-- End of Wrapper -->
+     asdasdasdasdasd
   </div>
 </body>
 </html>
