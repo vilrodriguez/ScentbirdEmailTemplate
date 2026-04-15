@@ -11,9 +11,6 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400,450;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
   <title>Scentbird Drift Email Template</title>
   <!--[if mso]>
   <noscript>
@@ -25,31 +22,23 @@
   </noscript>
   <![endif]-->
 
-  <!--[if mso]>
-    <style type="text/css">
+  <!--[if (gte mso 9)|(IE)]>
+  <style type="text/css">
     a {
-        text-decoration: none;
-        color: inherit;
+        text-decoration: none!important;
+        color: inherit!important;
+    }
+    body, table, td, p, a { 
+        font-family: Arial, sans-serif!important; 
     }
     </style>
 <![endif]-->
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
-    }
-     @font-face { 
-        font-family: 'PT Serif'; 
-        font-style: normal; 
-        font-weight: 400; 
-        src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400,450;0,700;1,400;1,700&display=swap');
-    }
-    @font-face { 
-        font-family: 'Josefin Sans'; 
-        font-style: normal; 
-        font-weight: 450; 
-        src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     }
     /* General Reset */
     body {
@@ -60,7 +49,6 @@
         -ms-text-size-adjust: 100%;
         font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     }
-
     /* Image Reset */
     img {
         border: 0;
@@ -69,6 +57,7 @@
         outline: none;
         text-decoration: none;
         display: block; 
+        -ms-interpolation-mode: bicubic; 
     }
     /* Table Reset */
     table, td {
@@ -76,21 +65,46 @@
         margin: 0 auto;
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%;
     }
-    h1, h2, h3, h4, h5, h6, p { 
+    h1, p { 
         margin: 0; 
         padding: 0;
-        mso-line-height-rule: exactly; 
+        mso-line-height-rule: exactly;
     }
     /* Link Reset */
     a {
         text-decoration: none;
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%;
     }
      /* iOS blue links fix */
     a[x-apple-data-detectors] {
-      color: inherit !important;
-      text-decoration: none !important;
+      color: inherit!important;
+      text-decoration: none!important;
+      font-size: inherit!important; 
+    font-family: inherit!important; 
+    font-weight: inherit!important; 
+    line-height: inherit!important;
     }
+    /* Chrome Gmail blue text fix */
+    .ii a[href] { 
+        color: inherit !important; 
+    }
+     @font-face { 
+        font-family: 'PT Serif'; 
+        font-style: normal; 
+        font-weight: 400; 
+        src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400,450;0,700;1,400;1,700&display=swap');
+    }
+    @font-face { 
+        font-family: 'Josefin Sans'; 
+        font-style: normal; 
+        font-weight: 400; 
+        src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    }
+    
     /* Reusable classes */    
     .h1_font {
         font-family: 'PT Serif', Courier, monospace;
@@ -129,10 +143,6 @@
       .btn_width {
         width:327px;
       }
-      .footer_side_paddings {
-        padding-left: 80px; 
-        padding-right: 80px;
-      }
       .display_inline_block {
         display: inline-block;
       }
@@ -141,38 +151,38 @@
       }
     @media screen and (max-width: 600px) {
       .container {
-        width: 100% !important;
+        width: 100%!important;
       }
       .stack {
-        display: block !important;
-        width: 100% !important;
+        display: block!important;
+        width: 100%!important;
       }
       .padding {
-        padding: 20px !important;
+        padding: 20px!important;
       }
       .text-center {
-        text-align: center !important;
+        text-align: center!important;
       }
       .padding_bottom_10px_resp {
-        padding-bottom: 10px !important;
+        padding-bottom: 10px!important;
       }
       .padding_bottom_12px_resp {
-        padding-bottom: 12px !important;
+        padding-bottom: 12px!important;
       }
       .hero_side_paddings_resp {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
+        padding-left: 24px!important;
+        padding-right: 24px!important;
       }
       .btn_side_paddings_resp {
-        padding-left: 32px !important;
-        padding-right: 32px !important;
+        padding-left: 32px!important;
+        padding-right: 32px!important;
       }
       .btn_width_resp {
-        width:200px !important;
+        width:200px!important;
       }
       .footer_side_paddings_resp {
-        padding-left: 24px !important; 
-        padding-right: 24px !important;
+        padding-left: 24px!important; 
+        padding-right: 24px!important;
       }
     }
   </style>
@@ -182,259 +192,256 @@
      <!-- Wrapper -->
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f4f4f4" style="width: 100%; background-color: #f4f4f4;">
         <tr>
-        <td align="center">
-            <!-- Container -->
-            <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="container" bgcolor="#ffffff" style="width:600px; max-width:600px; background-color:#ffffff;">
+            <td align="center">
+                <!-- Container -->
+                <table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" class="container" bgcolor="#ffffff" style="width:600px; max-width:600px; background-color:#ffffff;">
 
-            <!-- HEADER LOGO AND LINK MENU-->
+                <!-- HEADER LOGO AND LINK MENU-->
+                    <tr> 
+                        <td align="center" bgcolor="#221F20" class="text_align_center" style="background-color:#221F20; padding-top: 44px; padding-left: 72px; padding-right: 72px;">
+                            <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://drift.co/" target="_blank">
+                                            <img src="https://vilrodriguez.github.io/img/drift_logo.png" width="131" alt="Drift logo" class="display_inline_block" >
+                                        </a>
+                                    </td>
+                                </tr>       
+                                <tr>
+                                    <td align="center" class="text_align_center" style="padding-top: 28px; padding-bottom: 22px;">
+                                        <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%;">
+                                            <tr>
+                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 20%; text-align: center;">
+                                                    <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">
+                                                        SHOP ALL
+                                                    </a>
+                                                </td>
+                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 15%; text-align: center;">
+                                                    <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">
+                                                        CAR
+                                                    </a>
+                                                </td>
+                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 15%; text-align: center;">
+                                                    <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">
+                                                        HOME
+                                                    </a>
+                                                </td>
+                                                <td class="stack padding_bottom_10px_resp text_color_light" style="width: 50%; text-align: center;">
+                                                    <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">
+                                                        SCENT OF THE MONTH
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>             
+                        </td>
+                    </tr>
+                <!-- DIVIDER -->
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="height: 80px; width: 100%; background-color: #FFFFFF;">
+                            
+                        </td>
+                    </tr>
+
+                <!-- HERO SECTION-->
+                    <tr>
+                        <td>
+                            <a href="https://drift.co/" target="_blank">
+                                <img src="https://vilrodriguez.github.io/img/hero_image_clip.png" width="600" height="auto" alt="" style="display:block; width: 100%; height: auto;">
+                            </a>
+                        </td>
+                    </tr>
+                <!-- BODY CONTENT -->
                 <tr> 
-                    <td bgcolor="#221F20" style="background-color:#221F20; padding-top: 44px; padding-left: 72px; padding-right: 72px;">
-                        <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%;">
+                    <td align="center" bgcolor="#A34A24" width="600" class="hero_side_paddings hero_side_paddings_resp text_align_center" style="background-image: url(https://vilrodriguez.github.io/img/textured_bodybg.png); background-repeat: no-repeat; background-position: center; background-color: #A34A24; width:100%; max-width: 600px;">
+                        
+                        
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
                             <tr>
-                                <td>
-                                    <a href="https://drift.co/" target="_blank">
-                                        <img src="https://i.ibb.co/7NK1kSX8/drift-logo.png" width="131" alt="Drift logo" class="display_inline_block" >
-                                    </a>
+                                <td align="center" class="text_align_center" style="padding-top: 39px;">
+                                    <h1 class="text_color_light h1_font" style="font-size: 50px; font-weight: 400; line-height: 50px; letter-spacing: -1px;" >
+                                        Ready in <em>seconds</em>
+                                    </h1>
                                 </td>
-                            </tr>       
+                            </tr>
                             <tr>
-                                <td class="padding_bottom_22px padding_bottom_12px_resp" style="padding-top: 28px;">
-                                    <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                <td align="center" class="text_align_center" style="padding-top: 24px;">
+                                    <p class="text_color_light" style="font-size: 22px; line-height: 30px; font-weight: 500; letter-spacing: -0.8px;">
+                                        Go from 0 to 100 in an instant—the Wood Car Freshener is easy to assemble, and even easier to enjoy.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="max-width: 327px; width:327px;">
+                                    <table role="presentation" width="327" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
                                         <tr>
-                                            <td class="stack padding_bottom_10px_resp text_color_light text_align_center" >
-                                                <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">SHOP ALL</a>
-                                            </td>
-                                            <td class="stack padding_bottom_10px_resp text_color_light text_align_center" >
-                                                <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">CAR</a>
-                                            </td>
-                                            <td class="stack padding_bottom_10px_resp text_color_light text_align_center" >
-                                                <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">HOME</a>
-                                            </td>
-                                            <td class="stack padding_bottom_10px_resp text_color_light text_align_center" >
-                                                <a href="https://drift.co/" target="_blank" class="text_color_light header_link_style">SCENT OF THE MONTH</a>
+                                            <td align="center" style="padding-top:24px; padding-bottom:45px;">
+                                            <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://drift.co/account/" style="width:327px; height:48px;v-text-anchor:middle;" arcsize="50%" stroke="f" fillcolor="#FFFFFF">
+                                                <w:anchorlock/>
+                                                <center style="color:#363530;font-family:'Josefin Sans',sans-serif;font-size:16px;font-weight: 500;">
+                                                LEARN MORE
+                                                </center>
+                                            </v:roundrect>
+                                            <![endif]-->
+                                            <!--[if !mso]><!-- -->
+                                                <a href="https://drift.co/account/" class="p_font btn_side_paddings_resp btn_width btn_width_resp" style="max-width: 327px; display:block; background-color:#FFFFFF; color:#363530; text-decoration:none; padding-top:15px; padding-bottom:15px; font-size:16px; line-height: 140%; font-weight: 500; border-radius:50px;">
+                                                    LEARN MORE
+                                                </a>
+                                            <!--<![endif]-->
+
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                         </table>             
-                    </td>
-                </tr>
-            <!-- DIVIDER -->
-                <tr>
-                    <td bgcolor="#FFFFFF" style="height: 80px; width: 100%; background-color: #FFFFFF;">
                         
                     </td>
                 </tr>
-
-            <!-- HERO SECTION-->
-                <tr>
-                    <td>
-                        <a href="https://drift.co/" target="_blank">
-                            <img src="https://i.ibb.co/5ggXMRvr/hero-image-clip.png" width="600" height="auto" alt="" style="display: block; width: 100%; height: auto;">
-                        </a>
-                    </td>
-                </tr>
-            <!-- BODY CONTENT -->
-            <tr> 
-                <td align="center" bgcolor="#A34A24" class="hero_side_paddings hero_side_paddings_resp text_align_center" style="background-image: url(https://i.ibb.co/nMsNSrLs/textured-bodybg.png); background-color: #A34A24;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-                        <tr>    
-                            <td align="center" class="text_align_center">
+                <!-- BODY CONTENT SECOND IMAGE -->
+                    <tr>
+                        <td>
+                            <a href="https://drift.co/collections/for-your-home" target="_blank">
+                                <img src="https://vilrodriguez.github.io/img/body_list_howdrifworks.png" width="600" height="auto" alt="How Drift works" style="display:block; width: 100%; height: auto;">
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- BODY CONTENT ITEM LIST -->
+                    <tr> 
+                        <td align="center" bgcolor="#EDEAE5" class="hero_side_paddings hero_side_paddings_resp text_align_center" style="padding-top:32px; padding-bottom:78px; background-color: #EDEAE5;">
+                            <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                
                                 <tr>
-                                    <td style="padding-top: 39px;">
-                                        <h1 class="text_color_light h1_font" style="font-size: 50px; font-weight: 400; line-height: 50px;" >
-                                            Ready in <em>seconds</em>
-                                        </h1>
+                                    <td align="center" style="text-align: center;">
+                                        <img src="https://vilrodriguez.github.io/img/list1.png" width="75" alt="Step 1" class="display_inline_block">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text_align_center" style="padding-top: 24px;">
-                                        <p class="text_color_light" style="font-size: 22px; line-height: 140%; font-weight: 450; letter-spacing: -0.8px;">
-                                            Go from 0 to 100 in an instant—the Wood Car Freshener is easy to assemble, and even easier to enjoy.
+                                    <td align="center" style="padding-top: 16px; text-align: center;">
+                                        <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
+                                            Attach Metal clip to visor
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center" style="padding-top:24px; padding-bottom:45px; max-width: 327px;">
-                                    <!--[if mso]>
-                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://drift.co/account/" style="width:327px; height:48px;v-text-anchor:middle;" arcsize="50%" stroke="f" fillcolor="#363530">
-                                        <w:anchorlock/>
-                                        <center style="color:#ffffff;font-family:'Josefin Sans',sans-serif;font-size:16px;font-weight: 450;">
-                                        LEARN MORE
-                                        </center>
-                                    </v:roundrect>
-                                    <![endif]-->
-                                    <!--[if !mso]><!-- -->
-                                        <a href="https://drift.co/account/" class="p_font btn_side_paddings_resp btn_width btn_width_resp" style="display:block; background-color:#FFFFFF; color:#363530; text-decoration:none; padding-top:15px; padding-bottom:15px; font-size:16px; line-height: 140%; font-weight: 450; border-radius:50px;">
-                                            LEARN MORE
-                                        </a>
-                                    <!--<![endif]-->
-
+                                    <td align="center" style="padding-top: 40px; text-align: center;">
+                                        <img src="https://vilrodriguez.github.io/img/list2.png" width="75" alt="Step 2" class="display_inline_block">
                                     </td>
                                 </tr>
-                            </td>
-                        </tr>
-                    </table>             
-                </td>
-            </tr>
-            <!-- BODY CONTENT SECOND IMAGE -->
-                <tr>
-                    <td>
-                        <a href="https://drift.co/collections/for-your-home" target="_blank">
-                            <img src="https://i.ibb.co/1YCPHYCK/body-list-howdrifworks.png" width="600" height="auto" alt="How Drift works" style="width: 100%; height: auto;">
-                        </a>
-                    </td>
-                </tr>
-                <!-- BODY CONTENT ITEM LIST -->
-                <tr> 
-                    <td align="center" bgcolor="#EDEAE5" class="hero_side_paddings hero_side_paddings_resp text_align_center" style="padding-top:32px; padding-bottom:78px; background-color: #EDEAE5;">
-                        <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-                            <tr>    
-                                <td align="center" style="text-align: center;">
-                                    <tr>
-                                        <td style="text-align: center;">
-                                            <img src="https://i.ibb.co/rRGBKhGp/list1.png" width="75" alt="Step 1" class="display_inline_block">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-top: 16px; text-align: center;">
-                                            <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
-                                                Attach Metal clip to visor
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </td>
-                            </tr>
-                            <tr>    
-                                <td align="center" style="text-align: center;">
-                                    <tr>
-                                        <td style="padding-top: 40px; text-align: center;">
-                                            <img src="https://i.ibb.co/XrXcgFMb/list2.png" width="75" alt="Step 2" class="display_inline_block">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-top: 16px; text-align: center;">
-                                            <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
-                                                Open one side of bag until scent dissipates and scent block doesn’t have any visible oil on the surface
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </td>
-                            </tr>
-                            <tr>    
-                                <td align="center" style="text-align: center;">
-                                    <tr>
-                                        <td style="padding-top: 40px; text-align: center;">
-                                            <img src="https://i.ibb.co/5hfQygkz/list3.png" width="75" alt="Step 3" class="display_inline_block">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-top: 16px; text-align: center;">
-                                            <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
-                                                Attach the scent block to the clip
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </td>
-                            </tr>
-                            <tr>    
-                                <td align="center" style="text-align: center;">
-                                    <tr>
-                                        <td style="padding-top: 40px; text-align: center;">
-                                            <img src="https://i.ibb.co/ynZ3c3CD/list4.png" width="75" alt="Step 4" class="display_inline_block">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-top: 16px; text-align: center;">
-                                            <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
-                                                Replace the scent block at minimum every 30 days
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </td>
-                            </tr>
-                        </table>             
-                    </td>
-                </tr>
-            <!-- DIVIDER -->
-                <tr>
-                    <td bgcolor="#FFFFFF" style="height: 80px; width: 100%; background-color: #FFFFFF;">
-                        
-                    </td>
-                </tr>
-            <!-- FOOTER -->
-                <tr> 
-                    <td bgcolor="#221F20" class="footer_side_paddings_resp" style="background-color:#221F20; padding-top: 17px; padding-bottom:28px;">
-                        <table role="presentation" align="center" width="441" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%; max-width: 441px;">
-                            <tr>
-                                <td align="center">
-                                    <a href="https://drift.attn.tv/p/TNf/landing-page" target="_blank" style="text-decoration:none;">
-                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding-top: 16px; text-align: center;">
+                                        <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
+                                            Open one side of bag until scent dissipates and scent block doesn’t have any visible oil on the surface
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 40px; text-align: center;">
+                                        <img src="https://vilrodriguez.github.io/img/list3.png" width="75" alt="Step 3" class="display_inline_block">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 16px; text-align: center;">
+                                        <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
+                                            Attach the scent block to the clip
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 40px; text-align: center;">
+                                        <img src="https://vilrodriguez.github.io/img/list4.png" width="75" alt="Step 4" class="display_inline_block">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 16px; text-align: center;">
+                                        <p class="text_color_dark p_font" style="font-size: 20px; line-height: 26px; font-weight: 500; letter-spacing: -0.8%;">
+                                            Replace the scent block at minimum every 30 days
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>             
+                        </td>
+                    </tr>
+                <!-- DIVIDER -->
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="height: 80px; width: 100%; background-color: #FFFFFF;">
+                            
+                        </td>
+                    </tr>
+                <!-- FOOTER -->
+                    <tr> 
+                        <td bgcolor="#221F20" class="footer_side_paddings_resp" style="background-color:#221F20; padding-top: 17px; padding-bottom:28px;">
+                            <table role="presentation" align="center" width="441" cellpadding="0" cellspacing="0" border="0" class="text_align_center" style="width: 100%; max-width: 441px;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://drift.attn.tv/p/TNf/landing-page" target="_blank" style="text-decoration:none;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <!-- ICON -->
+                                                    <td valign="middle">
+                                                        <img src="https://vilrodriguez.github.io/img/bubbletext_footer_icon.png" width="18" alt="" style="display:block;">
+                                                    </td>
+                                                    <!-- SPACE -->
+                                                    <td width="10"></td>
+                                                    <!-- TEXT -->
+                                                    <td valign="middle" class="text_color_light p_font" style="font-size:16px; font-weight: 400; text-align: center;">
+                                                        get text alerts
+                                                    </td>
+                                                    <!-- SPACE -->
+                                                    <td width="10"></td>
+                                                    <!-- ARROW -->
+                                                    <td valign="middle">
+                                                        <img src="https://vilrodriguez.github.io/img/arrow_footer_icon.png" width="40" alt="" style="display:block;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </td>
+                                </tr>      
+                                <tr>
+                                    <td style="padding-top: 16px;">
+                                        <table role="presentation" align="center" width="132" cellpadding="0" cellspacing="0" border="0" style="width: 132px;">
                                             <tr>
-                                                <!-- ICON -->
-                                                <td valign="middle">
-                                                    <img src="https://i.ibb.co/XxSzxSh9/bubbletext-footer-icon.png" width="18" alt="">
+                                                <td style="width:44px; padding-right: 22px;" >
+                                                    <a href="https://www.instagram.com/driftgoods/" target="_blank" >
+                                                        <img src="https://vilrodriguez.github.io/img/ig_footer_icon.png" width="44" alt="Go to Drift Instagram account" style="display: inline-block;">
+                                                    </a>
                                                 </td>
-                                                <!-- SPACE -->
-                                                <td width="10"></td>
-                                                <!-- TEXT -->
-                                                <td valign="middle" class="text_color_light p_font" style="font-size:16px; font-weight: 400; text-align: center;">
-                                                    get text alerts
-                                                </td>
-                                                <!-- SPACE -->
-                                                <td width="10"></td>
-                                                <!-- ARROW -->
-                                                <td valign="middle">
-                                                    <img src="https://i.ibb.co/v6tjGm90/arrow-footer-icon.png" width="40" alt="">
+                                                <td style="width:44px; padding-left: 22px;" >
+                                                    <a href="https://www.facebook.com/driftgoods.co" target="_blank" >
+                                                        <img src="https://vilrodriguez.github.io/img/fb_footer_icon.png" width="44" alt="Go to Drift Facebook account" style="display: inline-block;">
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </a>
-                                </td>
-                            </tr>      
-                            <tr>
-                                <td style="padding-top: 16px;">
-                                    <table role="presentation" align="center" width="132" cellpadding="0" cellspacing="0" border="0" style="width: 132px;">
-                                        <tr>
-                                            <td style="width:44px; padding-right: 22px;" >
-                                                <a href="https://www.instagram.com/driftgoods/" target="_blank" >
-                                                    <img src="https://i.ibb.co/DfbPQ7ZR/ig-footer-icon.png" width="44" alt="Go to Drift Instagram account" style="display: inline-block;">
-                                                </a>
-                                            </td>
-                                            <td style="width:44px; padding-left: 22px;" >
-                                                <a href="https://www.facebook.com/driftgoods.co" target="_blank" >
-                                                    <img src="https://i.ibb.co/hpVSt4q/fb-footer-icon.png" width="44" alt="Go to Drift Facebook account" style="display: inline-block;">
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text_color_light" style="padding-top: 24px;">
-                                    <p class="text_color_light" style="text-align: center; font-size: 16px; line-height: 22px; letter-spacing: -0.5px; color: #D6C9BE;">
-                                        No longer want to receive these emails? <span style="color: #D6C9BE; text-decoration: underline;">Unsubscribe</span><br> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text_color_light" style="padding-top: 24px;">
+                                        <p class="text_color_light" style="text-align: center; font-size: 16px; line-height: 22px; letter-spacing: -0.5px; color: #D6C9BE;">
+                                            No longer want to receive these emails? <span style="color: #D6C9BE; text-decoration: underline;">Unsubscribe</span><br> 
 
-                                        590 N Kays Dr ste 110, Kaysville UT 84037
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td style="padding-top: 24px;">
-                                    <p style="color: #D6C9BE; font-weight: 390; font-size: 14px; line-height: 16px; letter-spacing: 0.5px;">
-                                        *Savings of 50% off will automatically be applied at checkout and is only valid for the first month of 1 product per month subscription plan ($16.95 per month). If a product has an upcharge, the discount will be applied to the subscription price ONLY. It cannot be applied to any previous order or combined with any other offer. Limit one-time offer per customer. Non-transferable, cannot be redeemed for cash. Discount excludes any applicable taxes or shipping. Scentbird reserves the right to modify or cancel the offer at any time. Free shipping applies within the contiguous United States only. Shipping is $4.99 USD for Canadian customers.
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>             
-                    </td>
-                </tr>
-        
-            </table>
-            <!-- End of Container -->
-        </td>
+                                            590 N Kays Dr ste 110, Kaysville UT 84037
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 24px;">
+                                        <p style="color: #D6C9BE; font-weight: 400; font-size: 14px; line-height: 16px; letter-spacing: 0.5px;">
+                                            *Savings of 50% off will automatically be applied at checkout and is only valid for the first month of 1 product per month subscription plan ($16.95 per month). If a product has an upcharge, the discount will be applied to the subscription price ONLY. It cannot be applied to any previous order or combined with any other offer. Limit one-time offer per customer. Non-transferable, cannot be redeemed for cash. Discount excludes any applicable taxes or shipping. Scentbird reserves the right to modify or cancel the offer at any time. Free shipping applies within the contiguous United States only. Shipping is $4.99 USD for Canadian customers.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>             
+                        </td>
+                    </tr>
+            
+                </table>
+                <!-- End of Container -->
+            </td>
         </tr>
     </table>
     <!-- End of Wrapper -->
