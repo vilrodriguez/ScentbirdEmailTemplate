@@ -2,8 +2,10 @@
 
 ## Part 1: Email Development
 
-- **Live template (web):** https://vilrodriguez.github.io/ScentbirdEmailTemplate/  
+- **Live template (web):** https://vilrodriguez.github.io/ScentbirdEmailTemplate/
+- **HTML template code:** https://github.com/vilrodriguez/ScentbirdEmailTemplate/blob/main/index.html
 - **GitHub repo:** https://github.com/vilrodriguez/ScentbirdEmailTemplate#
+
 
 ### Summary
 
